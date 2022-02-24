@@ -3,4 +3,4 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/Mr-Coxall/ICS2O-Unit1-04-HTML-CSS)](https://repl.it/github/Mr-Coxall/ICS2O-Unit1-04-HTML-CSS)
 
-This website can be found at: [https://Mr-Coxall.github.io/ICS2O-Unit1-04-HTML-CSS](https://Mr-Coxall.github.io/ICS2O-Unit1-04-HTML-CSS)
+This site can be found at: [https://Mr-Coxall.github.io/ICS2O-Unit1-04-HTML-CSS](https://Mr-Coxall.github.io/ICS2O-Unit1-04-HTML-CSS)
