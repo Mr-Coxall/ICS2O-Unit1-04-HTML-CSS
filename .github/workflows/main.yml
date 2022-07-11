@@ -1,4 +1,4 @@
-##################################################
+ ##################################################
 # Run Mr Coxall's Super Linter against code base #
 ##################################################
 
@@ -9,7 +9,7 @@ on: [push, pull_request]
 
 jobs:
   run-linters:
-    name: Linters
+    name: Mr Coxall's Super Linter
     runs-on: ubuntu-latest
 
     steps:
@@ -20,13 +20,14 @@ jobs:
         uses: Mr-Coxall/prettier_action@main
         with:
           # run Prettier and change code that needs fixing, before next section
-          prettier_options: --write **/*.{html,css,js,ts,md}
+          prettier_options: --write **/*.{html,css,js,ts,jsx,tsx,json}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run GitHub Super Linter
         uses: github/super-linter@main
         env:
           VALIDATE_ALL_CODEBASE: true
+          LINTER_RULES_PATH: /
           VALIDATE_CLANG_FORMAT: false
           VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_PYTHON_FLAKE8: false
